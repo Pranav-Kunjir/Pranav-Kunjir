@@ -1,3 +1,6 @@
+<h1 align="center">Hi 👋, I'm Pranav Kunjir</h1>
+<h3 align="center">A passionate software developer from India</h3>
+
 # 💫 About Me:
 💪I'm currently learning Full stack Development<br>😎Ask me about Game Development 🕹️, Front End and Linux🐧<br>📫 contact me at:- pranavkunjir93@gmail.com<br>
 
