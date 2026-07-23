@@ -3,14 +3,16 @@ from dateutil import relativedelta
 import time
 from lxml import etree
 import requests
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
 
-load_dotenv()
+# load_dotenv()
 
-username = os.environ.get("USER_NAME")
-token = os.environ.get("ACCESS_TOKEN")
+# username = os.environ.get("USER_NAME")
+# token = os.environ.get("ACCESS_TOKEN")
+token = os.environ['ACCESS_TOKEN']
+username = os.environ['USER_NAME']
 
 
 def get_user_repos(username, token=None):
