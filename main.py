@@ -11,8 +11,8 @@ import os
 
 # username = os.environ.get("USER_NAME")
 # token = os.environ.get("ACCESS_TOKEN")
-# token = os.getenv('ACCESS_TOKEN')
-# username = os.getenv('USER_NAME')
+token = os.getenv('ACCESS_TOKEN')
+username = os.getenv('USER_NAME')
 
 
 def get_user_repos(username, token=None):
