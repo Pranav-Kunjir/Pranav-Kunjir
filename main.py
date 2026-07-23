@@ -96,7 +96,7 @@ def get_commit_and_contrib_data(username, token, account_created_at):
     return total_commits, contributed_repos_count
 
 
-#def get_user_info(username, token=None):
+# def get_user_info(username, token=None):
 #    headers = {"Accept": "application/vnd.github+json"}
 #    if token:
 #        headers["Authorization"] = f"Bearer {token}"
