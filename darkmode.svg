@@ -13,7 +13,9 @@ size-adjust: 109%;
 .addColor {fill: #3fb950;}
 .delColor {fill: #f85149;}
 .cc {fill: #616e7f;}
-text, tspan {white-space: pre;}
+text, tspan {
+    font-family: "DejaVu Sans Mono", monospace;
+}
 </style>
 <title>ASCII art reproduction</title>
 <desc>ASCII art reproduced as SVG text, monospace font.</desc>
