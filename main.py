@@ -11,7 +11,7 @@ import os
 
 # username = os.environ.get("USER_NAME")
 # token = os.environ.get("ACCESS_TOKEN")
-token = os.getenv('ACCESS_TOKEN')
+token = os.getenv('GITHUB_TOKEN') or os.getenv('ACCESS_TOKEN')
 username = os.getenv('USER_NAME')
 
 
@@ -54,7 +54,7 @@ def get_commit_and_contrib_data(username, token, account_created_at):
     Loops year by year since account creation (GraphQL's contributionsCollection
     caps at 1 year per query) and sums total commits + unique repos contributed to.
     """
-    headers = {"Authorization": f"Bearer {token}"}
+    headers = {"Authorization": f"Bearer {token}"} if token else {}
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
       user(login: $login) {
